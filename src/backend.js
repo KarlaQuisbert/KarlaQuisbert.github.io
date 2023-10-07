@@ -1,5 +1,5 @@
-const baseApi = 'http://localhost:5150/historico';
-const apiKeyTomorrowIo = 'cNFbHg6R2vSCjmsJuA0k3ife1Sfjki8J';
+const baseApi = 'https://backend-sistema-actualizacion.onrender.com/historico';
+const apiKeyTomorrowIo = 'cNFbHg6R2vSCjmsJuA0k3ife1Sfjki8J';  // Us1m9a3bnaRY1fg6KpyK6kNEwQUiLJ36
 
 function verificarSiLaCiudadExiste(nombreCiudad) {
     return coordenadasCiudades.some(coordenada => coordenada.ciudad === nombreCiudad);

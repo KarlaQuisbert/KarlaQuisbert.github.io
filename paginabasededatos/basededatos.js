@@ -1,4 +1,4 @@
-const baseApi = 'http://localhost:5150/historico';
+const baseApi = 'https://backend-sistema-actualizacion.onrender.com/historico';
 
 // Funcion que muestra todas los registros de la tabla de la Base de Datos
 function obtenerHistorico() {
