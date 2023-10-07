@@ -1,0 +1,308 @@
+* {
+    font-family: 'Gill Sans MT';
+}
+
+@media screen and (min-width: 1024px) {  /*pcs, laptops -> desde 1024px hasta infinito*/
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(/imagenes/background.jpeg);
+        margin: 5%;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    input {
+        width: 50%;
+        height: 50px;
+        font-size: 20px;
+        background-color: #ffffff;
+    }
+
+    datalist {
+        max-height: 300px; /* Set a maximum height for the dropdown */
+        overflow-y: auto; /* Add scrollbars if the list is too long */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    button {
+        width: 40%;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #024a74;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .float-div-datos {
+        float: left;
+        width: 80%;
+    }
+
+    .float-div-integrantes {
+        float: left;
+        width: 16%;
+        height: 85px;   /* en px el alto*/
+        background-color: #0d7dbe;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #000000;
+        border-radius: 5px;
+        color: #ffffff;
+        padding: 10px;
+        font-size: 25px;  /*tamano de letra*/
+        text-align: center;
+    }
+
+    table, th, td {
+        border: 1px solid;
+        border-collapse: collapse;
+        text-align: center;
+        background-color: aliceblue;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .buttons {
+        width: 100%;
+        height: 73px;
+        margin-top: 30px;
+        margin-left: 70px;
+        font-size: 18px;
+        background-color: #024a74;
+    }
+
+    .float-div-tabla {
+        float:left;
+        width: 75%;
+        margin-bottom: 40px;        
+    }
+
+    .float-div-button {
+        float:left;
+        width: 15%;       
+    }
+
+    .principal {
+        width: 75%;
+    }
+
+    th {                        /*generico encabezado tabla*/
+        background-color: rgb(225, 216, 146);
+    } 
+
+    .valores-tabla{
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {  /*para tablets -> 481px - 1023px*/
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(/imagenes/background.jpeg);
+        margin: 5%;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    input {
+        width: 60%;
+        height: 50px;
+        font-size: 18px;
+        margin-bottom: 8px;
+        background-color: #ffffff;
+    }
+    
+    datalist {
+        max-height: 200px; /* Set a maximum height for the dropdown */
+        overflow-y: auto; /* Add scrollbars if the list is too long */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+        width: 30%;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #024a74;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .float-div-datos {
+        float: left;
+        width: 80%;
+    }
+
+    .float-div-integrantes {
+        float: left;
+        width: 16%;
+        height: 85px;   /* en px el alto*/
+        background-color: #0d7dbe;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #000000;
+        border-radius: 5px;
+        color: #ffffff;
+        padding: 10px;
+        font-size: 23px;  /*tamano de letra*/
+        text-align: center;
+    }
+
+    table, th, td {
+        border: 1px solid;
+        border-collapse: collapse;
+        text-align: center;
+        background-color: aliceblue;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .buttons {
+        width: 32%;
+        height: 65px;
+        margin-right: 5px;
+        background-color: #024a74;
+        font-size: 12px;
+    }
+
+    .float-div-tabla {
+        width: 100%;
+        margin-top: 160px;    
+        margin-bottom: 10px;   
+    }
+
+    .float-div-button {
+        width: 100%;       
+    }
+
+    .principal {
+        width: 100%;
+    }
+
+    th {                        /*generico encabezado tabla*/
+        background-color: rgb(225, 216, 146);
+    } 
+
+    .valores-tabla{
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px)  {  /*para celulares -> 320px - 480 px*/
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(/imagenes/background.jpeg);
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    input {
+        width: 98%;
+        height: 50px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        background-color: #ffffff;
+    }
+
+    datalist {
+        max-height: 200px; /* Set a maximum height for the dropdown */
+        overflow-y: auto; /* Add scrollbars if the list is too long */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    button {
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #024a74;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .float-div-datos {
+        width: 100%;
+    }
+
+    .float-div-integrantes {
+        width: 100%;
+        height: 60px;   /* en px el alto*/
+        background-color: #0d7dbe;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #000000;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 25px;  /*tamano de letra*/
+        text-align: center;
+    }
+
+    table, th, td {
+        border: 1px solid;
+        border-collapse: collapse;
+        text-align: center;
+        background-color: aliceblue;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+        background-color: #024a74;
+    }
+
+    .float-div-tabla {
+        width: 100%;  
+        overflow-x: scroll;      
+    }
+
+    .float-div-button {
+        width: 100%;       
+    }
+
+    .principal {
+        width: 100%;
+    }
+
+    th {                        /*generico encabezado tabla*/
+        background-color: rgb(225, 216, 146);
+    } 
+
+    .valores-tabla{
+        width: 100px;
+    }
+}

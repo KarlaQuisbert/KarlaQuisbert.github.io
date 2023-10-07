@@ -1,0 +1,55 @@
+h1 {
+    float: left;
+    text-align: left;
+    margin-left: 10%;
+}
+
+button {
+    float: right;
+    width: 10%;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #024a74;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10%;
+}
+
+.boton-link {
+    width: 30%;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #024a74;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    float: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    border: 2px solid #ccc;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+th, tr {
+    background-color: #ffffff;
+}
+
+.valores-tabla{
+    width: 100px;
+}

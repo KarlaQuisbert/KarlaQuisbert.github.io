@@ -1,0 +1,20 @@
+{
+    "name": "Sistema de actualización de información",
+    "short_name": "Sistema de actualización de información",
+    "start_url": ".",
+    "background_color": "#6896B0",
+    "theme_color": "#7BAECB",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "imagenes/logo-clima.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "imagenes/logo-clima.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
