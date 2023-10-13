@@ -4304,12 +4304,6 @@ const coordenadasCiudades = [
         "longitud": -64.954444
     },
     {
-        "id": 672,
-        "ciudad": "Pailon - Pozo del Tigre",
-        "latitud": -17.633333,
-        "longitud": -62.233333
-    },
-    {
         "id": 673,
         "ciudad": "Pailon - Pozo del Tigre (GPRS)",
         "latitud": -17.588916,
