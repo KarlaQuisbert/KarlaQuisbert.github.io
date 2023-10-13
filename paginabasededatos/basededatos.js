@@ -1,7 +1,9 @@
-const baseApi = 'https://backend-sistema-actualizacion.onrender.com/historico';
-
+const baseApi = 'http://localhost:5150/historico';
+const loadingDiv = document.querySelector('.loading');
+console.log('loading: ', loadingDiv);
 // Funcion que muestra todas los registros de la tabla de la Base de Datos
 function obtenerHistorico() {
+    loadingDiv.style.display = 'flex'; // muestra el loading
     const url = `${baseApi}?_sort=id&_order=desc`
 
     fetch(url)
@@ -16,6 +18,9 @@ function obtenerHistorico() {
         })
         .catch(error => {
             console.error('Error:', error);
+        }).finally(() => {
+            // Oculta el div de carga 
+            loadingDiv.style.display = 'none';
         });
 }
 

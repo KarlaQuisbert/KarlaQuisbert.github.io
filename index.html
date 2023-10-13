@@ -12,26 +12,27 @@
 </head>
 
 <body>
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
     <h1>SISTEMA DE ACTUALIZACIÓN DE INFORMACIÓN</h1>
     <div class="principal">
         <div class="float-div-datos">
             <div>
                 <input list="ciudades1" id="ciudad1" name="ciudad1" placeholder="Introduzca la ciudad o población">
                 <datalist id="ciudades1">
-                    <option value="Pailon - Pozo del Tigre (GPRS)">
-                    <option value="La Paz">
+                    <!-- Las opciones del selector son llenados desde el archivo backend.js-->
                 </datalist>
-                <button onclick="obtenerPronosticoDeUnaCiudad(document.getElementById('ciudad1').value)">
+                <button id="boton-actualizar" onclick="obtenerPronosticoDeUnaCiudad(document.getElementById('ciudad1').value)">
                     ACTUALIZAR DATOS
                 </button>
             </div>
             <div>
                 <input list="ciudades2" id="ciudad2" name="ciudad2" placeholder="Introduzca la ciudad o población">
                 <datalist id="ciudades2">
-                    <option value="Pailon - Pozo del Tigre (GPRS)">
-                    <option value="La Paz">
+                    <!-- Las opciones del selector son llenados desde el archivo backend.js-->
                 </datalist>
-                <button onclick="obtenerDiezUltimosDatosDeCiudad(document.getElementById('ciudad2').value)">
+                <button id="boton-presentar" onclick="obtenerDiezUltimosDatosDeCiudad(document.getElementById('ciudad2').value)">
                     PRESENTAR DATOS
                 </button>
             </div>
@@ -45,11 +46,11 @@
         <div class="float-div-tabla">
             <table>
                 <thead id="tablaCabecera">
-                    <!-- Los datos son llenados desde el archivo backend.js-->
+                    <!-- Los datos de la tabla son llenados desde el archivo backend.js-->
                 </thead>
                 
                 <tbody id="tablaCuerpo">
-                    <!-- Los datos son llenados desde el archivo backend.js-->
+                    <!-- Los datos de la tabla son llenados desde el archivo backend.js-->
                 </tbody>
             </table>
         </div>
@@ -57,7 +58,7 @@
         <div class="float-div-button">
             <button class="buttons" onclick="location.href='https://docs.tomorrow.io/reference/weather-forecast'">LINK WEB FUENTE DE DATOS</button>
             <button class="buttons" onclick="location.href='paginabasededatos/basededatos.html'">LINK BASE DE DATOS</button>
-            <button class="buttons">INFORMACIÓN</button>
+            <button class="buttons" onclick="location.href='paginainformacion/info.html'">INFORMACIÓN</button>
         </div>
     </div>
 

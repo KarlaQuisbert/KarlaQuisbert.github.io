@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="estilosinfo.css">
+</head>
+<body style="background-image: url(/imagenes/fondo_bd.jpg);">
+    <div>
+        <h1>INFORMACIÓN DE LA APLICACIÓN</h1>
+        <button onclick="location.href='../index.html'">Atrás</button>
+    </div>
+    <table>
+        <tr>
+            <td>
+                La aplicación web permite realizar actualizaciones a una base de datos y desplegar la información sobre datos climáticos de las distintas ciudades o poblaciones de Bolivia.
+                </br>
+                La fuente de donde se obtuvieron los datos climáticos es: <a href="https://docs.tomorrow.io/reference/weather-forecast">tomorrow.io</a>
+            </td>
+        </tr>
+    </table>
+
+    <h2>ENTRADAS</h2>
+    <table>
+        <tr>
+            <th>Imagen de referencia</th>
+            <th>Descripción</th>
+        </tr>
+            <tr>
+                <td><img src="imagenesinfo/selector.png" alt="Imagen selector" width="300px"></td>
+                <td>Introducir o seleccionar una ciudad o población de Bolivia.</td>
+            </tr>
+            <tr>
+                <td><img src="imagenesinfo/boton_actualizar.png" alt="Imagen botón" width="300px"></td>
+                <td>Realiza la actualización de datos climáticos respecto a la ciudad o población que se seleccionó, los datos que se actualizan son de la fecha actual.</td>
+            </tr>
+            <tr>
+                <td><img src="imagenesinfo/boton_presentar_datos.png" alt="Imagen botón" width="300px"></td>
+                <td>Realiza la presentación de los registros históricos relacionados con esa ubicación en el mismo formato que la tabla de entrada. Sin embargo, se limita a mostrar solo los últimos 10 registros, incluso si hay más disponibles en la base de datos, lo que ofrece a los usuarios una visión rápida de la información histórica más reciente para la ciudad o población seleccionada.</td>
+            </tr>
+    </table>
+
+    <h2>SALIDAS</h2>
+    <table>
+        
+            <tr>
+                <th>Columna</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>Gestión</td>
+                <td>Año actual, año de la consulta.</td>
+            </tr>
+            <tr>
+                <td>Mes y día</td>
+                <td>Mes y dia de la consulta.</td>
+            </tr>
+            <tr>
+                <td>Latitud y longitud</td>
+                <td>Ubicación de la ciudad o población consultada.</td>
+            </tr>
+            <tr>
+                <td>Temperatura máxima</td>
+                <td>Valor máximo de temperatura en el día consultado.</td>
+            </tr>
+            <tr>
+                <td>Humedad relativa máxima</td>
+                <td>Valor máximo registrado en el día de la consulta, expresado en porcentaje.</td>
+            </tr>
+            <tr>
+                <td>Presión máxima</td>
+                <td>Valor máximo registrado en el día de la consulta, expresado en mm de Hg.</td>
+            </tr>
+    </table>
+    <table>
+        
+            <tr>
+                <th>Ejemplo</th>
+            </tr>
+            <tr>
+                <td><img src="imagenesinfo/ejemplo_tabla.png" alt="Ejemplo tabla" width="100%"></td>
+            </tr>
+    </table>
+
+    <h2>BOTONES</h2>
+    <table>
+        
+            <tr>
+                <th>Imagen de referencia</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td><img src="imagenesinfo/boton_fuente_datos.png" alt="Imagen botón" width="200px"></td>
+                <td>Redirecciona al usuario a la página de donde se obtuvieron los datos.</td>
+            </tr>
+            <tr>
+                <td><img src="imagenesinfo/boton_base_de_datos.png" alt="Imagen botón" width="200px"></td>
+                <td>Redirecciona al usuario a la base de datos del sistema.</td>
+            </tr>
+            <tr>
+                <td><img src="imagenesinfo/boton_informacion.png" alt="Imagen botón" width="200px"></td>
+                <td>Redirecciona al usuario a la página de información de la aplicación.</td>
+            </tr>
+    </table>
+
+    <h2>ALERTAS</h2>
+    <table>
+        
+            <tr>
+                <th>Imagen de referencia</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td><img src="imagenesinfo/alerta_1.png" alt="Imagen alerta" width="400px"></td>
+                <td>La alerta será desplegada si el usuario no introduce ni selecciona una ciudad o población.</td>
+            </tr>
+            <tr>
+                <td><img src="imagenesinfo/alerta_2.png" alt="Imagen alerta" width="400px"></td>
+                <td>La alerta será desplegada si el usuario introduce una ciudad o población que no existe.</td>
+            </tr>
+            <tr>
+                <td><img src="imagenesinfo/alerta_3.png" alt="Imagen alerta" width="400px"></td>
+                <td>La alerta será desplegada si el usuario ya 'actualizó los datos' en el día. No se permite la actualización de datos de la misma ciudad o población en el mismo día.</td>
+            </tr>
+            <tr>
+                <td><img src="imagenesinfo/alerta_4.png" alt="Imagen alerta" width="400px"></td>
+                <td>La alerta será desplegada si los datos fueron actualizados/guardados correctamente en la base de datos.</td>
+            </tr>
+            <tr>
+                <td><img src="imagenesinfo/alerta_5.png" alt="Imagen alerta" width="400px"></td>
+                <td>La alerta será desplegada si el usuario presiona 'presentar datos', pero no se realizó ninguna actualización hasta la fecha.</td>
+            </tr>
+    </table>
+</body>
+</html>
