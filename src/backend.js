@@ -364,8 +364,8 @@ const coordenadasCiudades = [
     {
         "id": 13,
         "ciudad": "Agua de Castilla",
-        "latitud": -65.986389,
-        "longitud": -19.7725
+        "latitud": -19.7725,
+        "longitud": -65.986389
     },
     {
         "id": 14,
