@@ -1,4 +1,5 @@
-const baseApi = 'https://backend-sistema-actualizacion.onrender.com/historico';
+/*const baseApi = 'https://backend-sistema-actualizacion.onrender.com/historico';*/
+const baseApi = 'http://localhost:5150/historico';
 const loadingDiv = document.querySelector('.loading');
 console.log('loading: ', loadingDiv);
 // Funcion que muestra todas los registros de la tabla de la Base de Datos

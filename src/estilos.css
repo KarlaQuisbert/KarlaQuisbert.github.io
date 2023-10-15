@@ -315,7 +315,7 @@
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.571); /* Fondo semitransparente */
-    display: none;
+    display: none; /*none significa que estara oculto*/
     justify-content: center;
     align-items: center;
   }
