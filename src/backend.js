@@ -1,5 +1,5 @@
-/*const baseApi = 'https://backend-sistema-actualizacion.onrender.com/historico';*/
-const baseApi = 'http://localhost:5150/historico';
+const baseApi = 'https://backend-sistema-actualizacion.onrender.com/historico';
+/*const baseApi = 'http://localhost:5150/historico';*/
 const apiKeyTomorrowIo = 'cNFbHg6R2vSCjmsJuA0k3ife1Sfjki8J';
 const loadingDiv = document.querySelector('.loading');
 
