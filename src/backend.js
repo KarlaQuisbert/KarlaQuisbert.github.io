@@ -11,8 +11,8 @@ function obtenerPronosticoDeUnaCiudad(nombreCiudad) {
     if (nombreCiudad.length === 0) {
         alert("Introduzca una ciudad o población.");
     } else {
-        const apiKey = apiKeyTomorrowIo;
-        const ciudadObjeto = coordenadasCiudades.find(element => element.ciudad === nombreCiudad);
+        const apiKey = apiKeyTomorrowIo;   
+        const ciudadObjeto = coordenadasCiudades.find(element => element.ciudad === nombreCiudad);  /*busca el nombre de la ciudad ingresado por el usuario*/ 
 
         if (ciudadObjeto !== undefined) {
             loadingDiv.style.display = 'flex'; // muestra el loading
@@ -46,8 +46,8 @@ function obtenerPronosticoDeUnaCiudad(nombreCiudad) {
 
 // Guarda los datos de la busqueda- arma la tabla historico
 function guardarDatosEnTablaHistorico(datosDeHoy, ciudadObj) {   
-    const fecha = obtenerFecha(datosDeHoy.time)
-    const values = datosDeHoy.values
+    const fecha = obtenerFecha(datosDeHoy.time);
+    const values = datosDeHoy.values;
     const ciudad = ciudadObj.ciudad;
 
     buscarCiudadYFechaEnBD(ciudad, fecha)
@@ -70,7 +70,7 @@ function guardarDatosEnTablaHistorico(datosDeHoy, ciudadObj) {
                 presion_maxima: values.pressureSurfaceLevelMax,
             };
 
-            fetch(url, {
+            fetch(url, {    /*fetch = POSTMAN*/ 
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

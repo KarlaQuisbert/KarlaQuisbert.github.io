@@ -5,14 +5,14 @@ console.log('loading: ', loadingDiv);
 // Funcion que muestra todas los registros de la tabla de la Base de Datos
 function obtenerHistorico() {
     loadingDiv.style.display = 'flex'; // muestra el loading
-    const url = `${baseApi}?_sort=id&_order=desc`
+    const url = `${baseApi}?_sort=id&_order=desc`   
 
     fetch(url)
         .then(response => {
             if (!response.ok) {
                 throw new Error('La respuesta de la red no fue correcta');
             }
-            return response.json(); // Parsea la respuesta a JSON
+            return response.json(); // Si fue satisfactorio la respuesta a JSON
         })
         .then(data => {
             mostrarValoresTabla(data);
@@ -29,7 +29,7 @@ function obtenerHistorico() {
 function mostrarValoresTabla(data){
     var tablaCuerpo = document.getElementById('tablaRegistrosBD');
 
-    /*Todo el for es para llenar los 10 registros de la tabla*/
+    /*Todo el for es para llenar todos registros de la tabla historico*/
     for(var i = 0; i < data.length; i++) {
             var fila = document.createElement('tr');
             
