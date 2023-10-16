@@ -1,6 +1,6 @@
 const baseApi = 'https://backend-sistema-actualizacion.onrender.com/historico';
 /*const baseApi = 'http://localhost:5150/historico';*/
-const apiKeyTomorrowIo = 'cNFbHg6R2vSCjmsJuA0k3ife1Sfjki8J';
+const apiKeyTomorrowIo = 'Us1m9a3bnaRY1fg6KpyK6kNEwQUiLJ36';  /*cNFbHg6R2vSCjmsJuA0k3ife1Sfjki8J*/
 const loadingDiv = document.querySelector('.loading');
 
 function verificarSiLaCiudadExiste(nombreCiudad) {
@@ -7597,7 +7597,14 @@ const coordenadasCiudades = [
         "ciudad": "4 Esquinas (GPRS)",
         "latitud": -17.183616,
         "longitud": -66.25057
+    },
+    {
+        "id": 1225,
+        "ciudad": "Huacaraje",
+        "latitud": -13.5388,
+        "longitud": -63.7584
     }
+
 ];
 
 /* Llena los valores de los dos selectores */
