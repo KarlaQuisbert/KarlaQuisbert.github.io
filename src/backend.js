@@ -16,7 +16,7 @@ function obtenerPronosticoDeUnaCiudad(nombreCiudad) {
 
         if (ciudadObjeto !== undefined) {
             loadingDiv.style.display = 'flex'; // muestra el loading
-            const url = `https://api.tomorrow.io/v4/weather/forecast?location=${ciudadObjeto.longitud},${ciudadObjeto.latitud}&apikey=${apiKey}`;
+            const url = `https://api.tomorrow.io/v4/weather/forecast?location=${ciudadObjeto.latitud},${ciudadObjeto.longitud}&apikey=${apiKey}`;
             fetch(url)
                 .then(response => {
                     if (!response.ok) {
